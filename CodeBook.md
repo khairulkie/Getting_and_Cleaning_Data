@@ -12,13 +12,11 @@ Dataset
 
 The dataset data computed by the script run_analysis.R includes all the mean and standard deviations measurements from the raw data, for both test and training datasets. Each row corresponds to a unique observation and includes the following variables:
 
-    ID_subject: Value between 1 and 30. Identifies the subject of the measurements
-    measurement_type: "TEST" or "TRAINING". Identifies the measurement type of the row
-    ID_activity: value between 1 and 6. Identifies the activity measured and corresponds to the variable "activity"
-    activity: Description of the variable ID_activity:
-      For ID_activity 1 = "WALKING"
-      For ID_activity 2 = "WALKING_UPSTAIRS"
-      For ID_activity 3 = "WALKING_DOWNSTAIRS"
-      For ID_activity 4 = "SITTING"
-      For ID_activity 5 = "STANDING"
-      For ID_activity 6 = "LAYING"
+   ID_subject: Value between 1 and 30. Identifies the subject of the measurements
+   measurement_type: "TEST" or "TRAINING". Identifies the measurement type of the row
+   ID_activity: value between 1 and 6. Identifies the activity measured and corresponds to the variable "activity"
+   activity: An activity label, including WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+   t*: For this column name and all that follow, it is best to refer to the features_info.txt file from the original dataset. 
+   f*: For this column name and all that follow, it is best to refer to the features_info.txt file from the original dataset.
+   
+ In short, all the following column names that contain std are standard deviation measures, and all that contain mean are its average. Time domain variables begin with t, time frequency domain variables begin with f. Variables containing acc refer to acceleration values.
